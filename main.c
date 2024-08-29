@@ -33,7 +33,8 @@ void wait_user_selection(void) {
 			exit(0);
 			break;
 		default:
-			printf("Not an option, please select again.\n");	
+			printf("Not an option, please select again.\n");
+			wait_user_selection();
 	}
 }
 
